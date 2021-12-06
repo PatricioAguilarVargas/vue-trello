@@ -1,0 +1,33 @@
+/******************************************
+ PARA OBTENER ESTA INFORMACION SE DEBE
+ - CREAR CUENTA EN FIREBASE
+ - IR A REALTIME DATABASE
+    - CREAR UN PROYECTO
+- IR A DESCRIPCION GENERAL DEL PROYECTO
+    - sELECCIONAR AGREGAR APP WEB
+    - INGRESAR EL NOMBRE
+    - SELECCIONAR FIREBASE HOSTING
+    -SEGUIR CON LOS PASOS
+      - npm install -g firebase-tools
+      - firebase login
+      - firebase init
+        - Realtime Database: Configure a security rules file for Realtime Database and (optionally) provision default instance
+        - Use an existing project
+        - seleccionar el proyecto creado
+      - firebase deploy
+    -SELECCIONAR LA APP CREADA
+      -EN GENERAL BAJAR Y COPIAR CONTENIDO firebaseConfig  ACA
+*******************************************/
+export default {
+    apiKey: "",
+    authDomain: ",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
+    };
+    firebase.initializeApp(config);
+    
+    // Get a reference to the database service
+    var database = firebase.database();
